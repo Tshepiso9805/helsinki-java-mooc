@@ -6,6 +6,18 @@ public class Story {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("I will tell you a story, but I need some information first.\n" +
+                "What is the main character called?");
+        String mainC = scanner.nextLine();
+
+        System.out.println("What is their job?");
+        String jobT = scanner.nextLine();
+
+        System.out.println("Here is the story:\n" +
+                        "Once upon a time there was " + mainC+ ", who was " + jobT + ".\n" +
+                        "On the way to work, "+ mainC + " reflected on life.\n" +
+                        "Perhaps " + mainC +" will not be " + jobT + " forever.");
+
         // Write your program here
 
     }
