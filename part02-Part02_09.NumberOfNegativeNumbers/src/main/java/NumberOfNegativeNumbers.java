@@ -13,20 +13,16 @@ public class NumberOfNegativeNumbers {
             int num = Integer.valueOf(scanner.nextLine());
 
             if (num < 0) {
-                negativeV = negativeV +1;
+                negativeV++;
 
-            }
-
-            else if (num !=0){
+            } else if (num !=0){
                 continue;
-            }
-            else if (num == 0) {
-                break;
 
+            } else if (num == 0) {
+                break;
             }
         }
         System.out.println("Number of negative numbers: "+ negativeV);
-        }
-
     }
+}
 
