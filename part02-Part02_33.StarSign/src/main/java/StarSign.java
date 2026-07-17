@@ -19,18 +19,42 @@ public class StarSign {
     }
 
     public static void printStars(int number) {
+        int i = 1;
+        while (i <= number){
+            System.out.print("*");
+            i++;
+        }
+        System.out.println("");
         // first part of the exercise
     }
 
     public static void printSquare(int size) {
+        int row = 0;
+        while (row < size){
+            printStars(size);
+            row++;
+        }
+        System.out.println("");
         // second part of the exercise
     }
 
     public static void printRectangle(int width, int height) {
+        int row = 0;
+        while (row < height){
+            printStars(width);
+            row++;
+        }
+        System.out.println("");
         // third part of the exercise
     }
 
     public static void printTriangle(int size) {
+        int row = 1;
+        while (row <= size){
+            printStars(row);
+            row++;
+        }
+        System.out.println("");
         // fourth part of the exercise
     }
 }
